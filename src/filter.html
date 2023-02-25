@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('html/head.html',{ "title":"Главная" })
+
+   <body>
+      <div class="more-filters">
+         <div class="more-filters__container">
+            <div class="more-filters__content">
+               <div class="more-filters__head more-filters-head">
+                  <div class="more-filters-head__result-col">
+                     <p class="more-filters-head__result">500 result</p>
+                  </div>
+                  <div class="more-filters-head__list-col">
+                     <button type="button" class="more-filters-head__item">Price</button>
+                     <button type="button" class="more-filters-head__item">Photography Style</button>
+                     <button type="button" class="more-filters-head__item">Cultural & Traditional</button>
+                     <button type="button" class="more-filters-head__item">Photography Services</button>
+                     <button type="button" class="more-filters-head__item">Support Diversity</button>
+                     <button type="button" class="more-filters-head__item">Location and fees</button>
+                     <button type="button" class="more-filters-head__item more-filters-head__item_last">
+                        <img src="@img/settings.svg" />
+                        <span> More Filters</span>
+                     </button>
+                  </div>
+               </div>
+               <div class="more-filters__body more-filter-body">
+                  <div class="more-filter-body__content">
+                     <p class="more-filter-body__title">Filter by</p>
+                     <div class="more-filter-body__block-list">
+                        <div class="more-filter-body__block more-filter-block">
+                           <p class="more-filter-block__title">Your Budget</p>
+                           <input class="more-filter-block__value" type="hidden" />
+                           <div class="more-filter-block__list">
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Your Budget" value="Under $2,000" />
+                                 <span class="radio__text">Under $2,000</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Your Budget" value="$2,000 - $3,999" />
+                                 <span class="radio__text">$2,000 - $3,999</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Your Budget" value="$4,000 - $5,999" />
+                                 <span class="radio__text">$4,000 - $5,999</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Your Budget" value="$6,000 - $7,999" />
+                                 <span class="radio__text">$6,000 - $7,999</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Your Budget" value="$8,000 -$9,999" />
+                                 <span class="radio__text">$8,000 -$9,999</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Your Budget" value="$10,000+" />
+                                 <span class="radio__text">$10,000+</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="more-filter-body__block more-filter-block">
+                           <p class="more-filter-block__title">Photography Style</p>
+                           <input class="more-filter-block__value" type="hidden" />
+                           <div class="more-filter-block__list">
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Fine Art" />
+                                 <span class="radio__text">Fine Art</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Natural" />
+                                 <span class="radio__text">Natural</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Editorial" />
+                                 <span class="radio__text">Editorial</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Film" />
+                                 <span class="radio__text">Film</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Photojournalistic" />
+                                 <span class="radio__text">Photojournalistic</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Traditional / Classic" />
+                                 <span class="radio__text">Traditional / Classic</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Fashion" />
+                                 <span class="radio__text">Fashion</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Vintage" />
+                                 <span class="radio__text">Vintage</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Artistic" />
+                                 <span class="radio__text">Artistic</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value=" Documentary" />
+                                 <span class="radio__text"> Documentary</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Dramatic" />
+                                 <span class="radio__text">Dramatic</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Lifestyle" />
+                                 <span class="radio__text">Lifestyle</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Modern" />
+                                 <span class="radio__text">Modern</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Black and White" />
+                                 <span class="radio__text">Black and White</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Night" />
+                                 <span class="radio__text">Night</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Dark & Moody" />
+                                 <span class="radio__text">Dark & Moody</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Landscape" />
+                                 <span class="radio__text">Landscape</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Illustrative" />
+                                 <span class="radio__text">Illustrative</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Style" value="Underwater" />
+                                 <span class="radio__text">Underwater</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="more-filter-body__block more-filter-block">
+                           <p class="more-filter-block__title">Cultural & Traditional</p>
+                           <input class="more-filter-block__value" type="hidden" />
+                           <div class="more-filter-block__list">
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="American" />
+                                 <span class="radio__text">American</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="African-American" />
+                                 <span class="radio__text">African-American</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="European" />
+                                 <span class="radio__text">European</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="South Asian" />
+                                 <span class="radio__text">South Asian</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Hindu" />
+                                 <span class="radio__text">Hindu</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Sikh" />
+                                 <span class="radio__text">Sikh</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Jewish" />
+                                 <span class="radio__text">Jewish</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Bengali" />
+                                 <span class="radio__text">Bengali</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Christian" />
+                                 <span class="radio__text">Christian</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Nigerian" />
+                                 <span class="radio__text">Nigerian</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Asian" />
+                                 <span class="radio__text">Asian</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Latin American" />
+                                 <span class="radio__text">Latin American</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Lebanese" />
+                                 <span class="radio__text">Lebanese</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Muslim" />
+                                 <span class="radio__text">Muslim</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Ukrainian" />
+                                 <span class="radio__text">Ukrainian</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Cultural & Traditional" value="Polish" />
+                                 <span class="radio__text">Polish</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="more-filter-body__block more-filter-block">
+                           <p class="more-filter-block__title">Photography Services</p>
+                           <input class="more-filter-block__value" type="hidden" />
+                           <div class="more-filter-block__list">
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Additional Hours" />
+                                 <span class="radio__text">Additional Hours</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Post-wedding Photoshoot" />
+                                 <span class="radio__text">Post-wedding Photoshoot</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Boudoir Shoot" />
+                                 <span class="radio__text">Boudoir Shoot</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Destination / Travel" />
+                                 <span class="radio__text">Destination / Travel</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Rehearsal Dinner" />
+                                 <span class="radio__text">Rehearsal Dinner</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Engagement Parties" />
+                                 <span class="radio__text">Engagement Parties</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="High-Res Images" />
+                                 <span class="radio__text">High-Res Images</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Second Shooter" />
+                                 <span class="radio__text">Second Shooter</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Wedding Portraits" />
+                                 <span class="radio__text">Wedding Portraits</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Wedding Albums" />
+                                 <span class="radio__text">Wedding Albums</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Proposals" />
+                                 <span class="radio__text">Proposals</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Engagement Session" />
+                                 <span class="radio__text">Engagement Session</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Elopement" />
+                                 <span class="radio__text">Elopement</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Film Photography" />
+                                 <span class="radio__text">Film Photography</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Bride-only session" />
+                                 <span class="radio__text">Bride-only session</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Drone photography" />
+                                 <span class="radio__text">Drone photography</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Online proofing" />
+                                 <span class="radio__text">Online proofing</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Printing rights" />
+                                 <span class="radio__text">Printing rights</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Photography Services" value="Fast editing" />
+                                 <span class="radio__text">Fast editing</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="more-filter-body__block more-filter-block">
+                           <p class="more-filter-block__title">Support Diversity</p>
+                           <input class="more-filter-block__value" type="hidden" />
+                           <div class="more-filter-block__list">
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Black-owned" />
+                                 <span class="radio__text">Black-owned</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Asian-owned" />
+                                 <span class="radio__text">Asian-owned</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="LGBTQ+-owned" />
+                                 <span class="radio__text">LGBTQ+-owned</span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Hispanic or Latinx-owned" />
+                                 <span class="radio__text">Hispanic or Latinx-owned </span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Native American-owned" />
+                                 <span class="radio__text">Native American-owned </span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Veteran-owned" />
+                                 <span class="radio__text">Veteran-owned </span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Pacific Islander-owned" />
+                                 <span class="radio__text">Pacific Islander-owned </span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Support Diversity" value="Woman-owned" />
+                                 <span class="radio__text">Woman-owned</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="more-filter-body__block more-filter-block">
+                           <p class="more-filter-block__title">Location and fees</p>
+                           <input class="more-filter-block__value" type="hidden" />
+                           <div class="more-filter-block__list">
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Location and fees" value="Based in this city" />
+                                 <span class="radio__text">Based in this city </span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input class="radio__input" type="checkbox" name="Location and fees" value="Serves this city" />
+                                 <span class="radio__text">Serves this city </span>
+                              </label>
+                              <label class="more-filter-block__item radio">
+                                 <input
+                                    class="radio__input"
+                                    type="checkbox"
+                                    name="Location and fees"
+                                    value="Serves this city for additional fee"
+                                 />
+                                 <span class="radio__text">Serves this city for additional fee</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="more-filter-body__bottom-row">
+                        <button type="button" class="more-filter-body__action-btn">See Results</button>
+                     </div>
+                     <button type="button" class="more-filter-body__close-btn"><img src="@img/close.svg" /></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
