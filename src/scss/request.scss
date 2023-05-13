@@ -1,0 +1,269 @@
+// .request-page {
+//    margin-top: 65px;
+//    @media (max-width: 991.98px) {
+//       margin-top: 60px;
+//    }
+//    span,
+//    p,
+//    button,
+//    h1,
+//    h2,
+//    a {
+//       letter-spacing: normal;
+//    }
+//    &__container {
+//       max-width: 1280px;
+//       padding: 0 15px;
+//       margin: auto;
+//    }
+
+//    &__content {
+//       padding: 50px 0px;
+//       @media (max-width: 991.98px) {
+//          padding: 25px 0px;
+//       }
+//    }
+
+//    &__title {
+//       font-family: 'Canela-Regular';
+//       font-size: 30px;
+//       line-height: 100%;
+//       text-align: center;
+//       color: #343434;
+//       margin: 0px 0px 40px 0px;
+//       @media (max-width: 991.98px) {
+//          margin-bottom: 20px;
+//       }
+//    }
+
+//    &__table {
+//    }
+// }
+// .reques-table {
+//    background: #ffffff;
+//    @media (max-width: 991.98px) {
+//       background-color: transparent;
+//    }
+//    &__head {
+//       display: grid;
+//       gap: 5%;
+//       grid-template-columns: 40% 55%;
+//       padding: 22px 0px;
+//       border-bottom: 1px solid #efe9e6;
+//       @media (max-width: 991.98px) {
+//          display: none;
+//       }
+//       h2 {
+//          margin: 0;
+//          font-family: 'Poppins-Light';
+//          font-size: 14px;
+//          line-height: 150%;
+//          color: #808080;
+//          &:first-child {
+//             padding-left: 40px;
+//          }
+//       }
+//    }
+
+//    &__body {
+//    }
+
+//    &__item {
+//    }
+// }
+// .request-item {
+//    border-bottom: 1px solid #efe9e6;
+//    display: grid;
+//    gap: 5%;
+//    grid-template-columns: 40% 55%;
+//    padding: 30px 40px 24px;
+//    &.active {
+//       background: #fbfafa;
+//    }
+//    @media (max-width: 1200px) {
+//       padding: 20px 20px 14px;
+//    }
+//    @media (max-width: 991.98px) {
+//       display: block;
+//       background-color: #ffffff;
+//       &:not(:last-child) {
+//          margin-bottom: 15px;
+//          border: none;
+//       }
+//    }
+//    &__block {
+//       display: grid;
+//       gap: 40px;
+//       @media (max-width: 991.98px) {
+//          display: block;
+//       }
+//       &_info {
+//          gap: 9%;
+//          grid-template-columns: 54% 37%;
+//       }
+
+//       &_comment {
+//          gap: 6%;
+//          grid-template-columns: 79% 15%;
+//       }
+//    }
+//    &__col {
+//    }
+
+//    &__data {
+//       display: flex;
+//       gap: 10px;
+//       align-items: baseline;
+//       margin-bottom: 5px;
+//       span {
+//          font-family: 'Poppins-Light';
+//          font-size: 14px;
+//          line-height: 150%;
+//          &:first-child {
+//             color: #808080;
+//             @media (max-width: 1200px) {
+//                max-width: 90px;
+//             }
+//             @media (max-width: 991.98px) {
+//                max-width: none;
+//             }
+//          }
+//          &:last-child {
+//             word-break: break-word;
+//             color: #343434;
+//          }
+//       }
+//       a {
+//          font-family: 'Poppins-Light';
+//          font-size: 14px;
+//          line-height: 150%;
+//          word-break: break-word;
+//          color: #343434;
+//          &:hover {
+//             text-decoration: underline;
+//          }
+//       }
+//    }
+
+//    &__text {
+//       margin: 0;
+//       font-family: 'Poppins-Light';
+//       font-size: 14px;
+//       line-height: 150%;
+//       color: #343434;
+//       @media (max-width: 991.98px) {
+//          margin-bottom: 15px;
+//          border-bottom: 1px dashed #efe9e6;
+//          border-top: 1px dashed #efe9e6;
+//          padding: 15px 0px;
+//       }
+//    }
+
+//    &__button {
+//       cursor: pointer;
+//       border: none;
+//       background: #343434;
+//       font-family: 'Canela-Regular';
+//       font-size: 15px;
+//       line-height: 100%;
+//       color: #ffffff;
+//       padding: 15px 10px;
+//       max-width: 90px;
+//       width: 100%;
+//       @media (max-width: 991.98px) {
+//          display: block;
+//          margin: auto;
+//          max-width: 160px;
+//       }
+//       &:hover {
+//          transition: all 0.3s ease 0s;
+//          background: #222222;
+//       }
+//       &:active {
+//          transition: all 0.3s ease 0s;
+//          background: #3b3b3b;
+//       }
+//    }
+// }
+//========================================================================================================================================================
+.messange-icon {
+   position: relative;
+   height: 16px;
+   width: 20px;
+   &.active {
+      .status-animation {
+         display: block;
+      }
+   }
+}
+.status-animation {
+   display: none;
+   position: absolute;
+   top: 0px;
+   right: -3px;
+   width: 8px;
+   height: 8px;
+   &__circle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(0deg, #d8b075, #d8b075), #343434;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+
+      &_1 {
+         animation: 4s linear 1s infinite backwards status-pulsate-main;
+
+         z-index: 3;
+      }
+
+      &_2 {
+         animation: 4s linear 1s infinite backwards status-pulsate-secondary;
+         z-index: 2;
+         opacity: 0.1;
+      }
+
+      &_3 {
+         animation: 4s linear 1s infinite backwards status-pulsate-tertiary;
+         z-index: 1;
+         opacity: 0.3;
+      }
+   }
+   @keyframes status-pulsate-main {
+      40% {
+         transform: translate(-50%, -50%) scale(1.25, 1.25);
+      }
+      60% {
+         transform: translate(-50%, -50%) scale(1.25, 1.25);
+      }
+   }
+   @keyframes status-pulsate-secondary {
+      10% {
+         transform: translate(-50%, -50%) scale(1, 1);
+      }
+      30% {
+         transform: translate(-50%, -50%) scale(3, 3);
+      }
+      80% {
+         transform: translate(-50%, -50%) scale(3, 3);
+      }
+      100% {
+         transform: translate(-50%, -50%) scale(1, 1);
+      }
+   }
+   @keyframes status-pulsate-tertiary {
+      25% {
+         transform: translate(-50%, -50%) scale(1, 1);
+      }
+      80% {
+         transform: translate(-50%, -50%) scale(3, 3);
+         opacity: 0;
+      }
+      100% {
+         transform: translate(-50%, -50%) scale(3, 3);
+         opacity: 0;
+      }
+   }
+}

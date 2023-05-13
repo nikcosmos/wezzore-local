@@ -1,0 +1,209 @@
+.reviews-banner {
+   &__container {
+      max-width: 1030px;
+      margin: auto;
+   }
+
+   &__content {
+      background: #343434;
+      display: flex;
+      align-items: center;
+      @media (max-width: 767.98px) {
+         display: block;
+      }
+   }
+
+   &__text-content {
+      flex: 0 0 43%;
+      padding-left: 60px;
+      @media (max-width: 767.98px) {
+         padding: 50px 15px 0px 15px;
+         margin-bottom: 20px;
+         max-width: 500px;
+         margin: auto;
+      }
+   }
+
+   &__text {
+      color: #d8b075;
+      font-size: 28px;
+      line-height: 100%;
+      letter-spacing: normal;
+      margin: 0px 0px 20px 0px;
+      padding-right: 60px;
+      @media (max-width: 767.98px) {
+         text-align: center;
+         padding: 0px 0px 0px 0px;
+      }
+   }
+
+   &__ref-box {
+      display: flex;
+      @media (max-width: 475.98px) {
+         display: block;
+      }
+   }
+
+   &__ref-link {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-height: 50px;
+      flex: auto;
+      margin: 0px 0px 0px 0px;
+      padding: 0px 20px;
+      overflow: hidden;
+      background: #ffffff;
+      height: 50px;
+      word-break: break-all;
+      letter-spacing: normal;
+   }
+
+   &__ref-btn {
+      flex: 0 0 120px;
+      font-size: 16px;
+      line-height: 100%;
+      padding: 17px 5px;
+      @media (max-width: 475.98px) {
+         width: 100%;
+         margin: 10px auto 0px;
+      }
+   }
+
+   &__images {
+      height: 260px;
+      width: 570px;
+      align-self: flex-end;
+      position: relative;
+      @media (max-width: 767.98px) {
+         width: 100%;
+         height: 50vw;
+      }
+      img {
+         display: block;
+         object-fit: cover;
+         object-position: 0 100%;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         bottom: 0;
+         left: 0;
+         @media (max-width: 767.98px) {
+            object-fit: contain;
+            object-position: 50% 100%;
+         }
+      }
+   }
+}
+
+.awards-banner {
+   &__container {
+      max-width: 1030px;
+      margin: auto;
+   }
+
+   &__content {
+      background: #343434;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      @media (max-width: 767.98px) {
+         display: block;
+      }
+   }
+
+   &__text-content {
+      padding-left: 60px;
+      flex: 0 0 43%;
+      @media (max-width: 767.98px) {
+         padding: 50px 15px 0px;
+         max-width: 500px;
+         margin: 0px auto 30px;
+      }
+   }
+
+   &__awards-bord {
+      width: 160px;
+      margin-bottom: 20px;
+      @media (max-width: 767.98px) {
+         margin: 0px auto 20px;
+      }
+      img {
+         max-width: 100%;
+      }
+   }
+
+   &__text {
+      font-size: 28px;
+      line-height: 100%;
+      color: #e5bd7f;
+      opacity: 0.8;
+      margin: 0px 0px 20px 0px;
+      @media (max-width: 767.98px) {
+         text-align: center;
+      }
+   }
+
+   &__actions {
+      display: flex;
+      gap: 10px;
+      @media (max-width: 767.98px) {
+         justify-content: center;
+      }
+   }
+
+   &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 150px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      padding: 17px 5px;
+      text-align: center;
+      transition: all 0.3s ease 0s;
+      height: auto;
+      &:hover {
+         transition: all 0.3s ease 0s;
+      }
+      &_gold {
+         color: #ffffff;
+         background: #e5bd7f;
+         &:hover {
+            background: rgba(229, 188, 127, 0.8);
+         }
+      }
+
+      &_white {
+         background: #ffffff;
+         color: #e5bd7f;
+         &:hover {
+            background: rgba(255, 255, 255, 0.9);
+         }
+      }
+   }
+
+   &__images {
+      height: 320px;
+      width: 550px;
+      align-self: flex-end;
+      position: relative;
+      @media (max-width: 767.98px) {
+         width: 100%;
+         height: 50vw;
+      }
+      img {
+         display: block;
+         object-fit: contain;
+         object-position: 50% 50%;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         bottom: 0;
+         left: 0;
+      }
+   }
+}

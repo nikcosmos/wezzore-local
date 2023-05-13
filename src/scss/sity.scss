@@ -1,0 +1,106 @@
+.other-vendors {
+   background: #f7f6f5;
+   &__container {
+      max-width: 1270px;
+      margin: auto;
+      padding: 0px 15px;
+   }
+
+   &__content {
+      padding: 70px 0px;
+   }
+
+   &__title {
+      font-family: 'Canela-Regular';
+      letter-spacing: normal;
+      font-size: 30px;
+      line-height: 100%;
+      text-align: center;
+      color: #343434;
+      margin: 0px 0px 43px 0px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      overflow: hidden;
+   }
+
+   &__item {
+      letter-spacing: normal;
+      border: 1px solid #efe9e6;
+      border-radius: 100px;
+      padding: 10px;
+      font-family: 'Poppins-Regular';
+      font-size: 14px;
+      line-height: 100%;
+      color: #343434;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         background: linear-gradient(280.77deg, #f9d69d -3.27%, #d8b075 100%), linear-gradient(101.07deg, #b2905b 0%, #d8b075 100%), #dfad9a;
+         transition: background 0.3s ease 0s;
+         color: #f7f6f5;
+      }
+      &:active {
+         transition: all 0.1s ease 0s;
+         background: linear-gradient(280.77deg, #f9d69d 50.27%, #d8b075 100%), linear-gradient(101.07deg, #b2905b 0%, #d8b075 100%), #dfad9a;
+      }
+   }
+
+   &__button {
+      display: none;
+      border: none;
+      background: transparent;
+      letter-spacing: normal;
+      margin: 43px auto 0px;
+      transition: all 0.3s ease 0s;
+      position: relative;
+      padding: 0;
+      .other-vendors__list-box.inited & {
+         display: block;
+      }
+      @media (max-width: 991.98px) {
+         margin-top: 30px;
+      }
+      cursor: pointer;
+      &::after {
+         content: '';
+         position: absolute;
+         display: block;
+         bottom: -6px;
+         height: 3px;
+         width: 100%;
+         background: linear-gradient(280.77deg, #f9d69d -3.27%, #d8b075 100%), linear-gradient(101.07deg, #b2905b 0%, #d8b075 100%), #dfad9a;
+      }
+      &:hover {
+         opacity: 0.7;
+         transition: all 0.3s ease 0s;
+      }
+      span {
+         pointer-events: none;
+         text-align: center;
+         font-family: 'Canela-Regular';
+         font-size: 18px;
+         line-height: 100%;
+         color: #343434;
+         &:first-child {
+            display: block;
+         }
+         &:last-child {
+            display: none;
+         }
+      }
+      .other-vendors__list-box.open & {
+         span {
+            &:first-child {
+               display: none;
+            }
+            &:last-child {
+               display: block;
+            }
+         }
+      }
+   }
+}
